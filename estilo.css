@@ -1,19 +1,36 @@
-:root{
-    --primay: #CFC3B0;
-    --secondary: 876D59;
-    
-
-
-
+*{
+    box-sizing: border-box;
+    margin: 0.0;
+    border: 0.0;
+    outline: 0.0;
 
 
 }
+:root{
+    --primay: #CFC3B0;
+    --secondary: 876D59;
 
+}
 
 
 
 header{
     background-color: #CFC3B0;
     height: 70px;
-    border: 3px solid rgb(0, 0, 0);
+    border: 2,5px solid rgb(0, 0, 0);
+}
+
+body{
+    background-image: url('Rectangle\ 21.jpg');
+    background-repeat: no-repeat;
+    height: 1280px;
+    width: 1280px;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+
 }
