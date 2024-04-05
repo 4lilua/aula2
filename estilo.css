@@ -1,36 +1,67 @@
 *{
     box-sizing: border-box;
-    margin: 0.0;
-    border: 0.0;
-    outline: 0.0;
+    margin: 0;
+    border: 0;
+    outline: 0;
 
 
 }
 :root{
     --primay: #CFC3B0;
-    --secondary: 876D59;
-
+    --secondary: #876D59;
 }
 
 
 
 header{
-    background-color: #CFC3B0;
-    height: 70px;
-    border: 2,5px solid rgb(0, 0, 0);
-}
+    background-color: var(--primay);
+    height: 6rem;
+    border: 2.5px solid rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
 
-body{
-    background-image: url('Rectangle\ 21.jpg');
-    background-repeat: no-repeat;
-    height: 1280px;
-    width: 1280px;
 }
 
 header nav{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    width: 100%;
+}
+
+header nav div.menu{
+    width: 100%;
+}
+
+header nav div a img{
+    height: 4rem;
+}
+
+main{
+    background-image: url('./imagem/fundo2.jpg');
+    background-repeat: no-repeat;
+    min-height: calc(100vh - 9rem);
+    background-size: 100% 100%;
+}
+main section{
+    background-color: var(--secondary);
+    max-width: 800px;
+    min-height: calc(100vh - 9rem);
+    margin: 0 auto;
+}
 
 
+
+
+footer{
+    background-color: var(--primay);
+    height: 3rem;
+    border: 2.5px solid rgb(0, 0, 0);
+}
+footer div.menu2{
+    width: 100%;
+}
+
+footer div a img{
+    height: 2.5rem;
 }
