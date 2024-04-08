@@ -1,0 +1,78 @@
+header input#menu-abre {
+    display: none;
+}
+
+@media(max-width: 400px) {
+    header {
+        flex-direction: row-reverse;
+    }
+
+    header figure span {
+        display: none;
+    }
+
+    header nav label[for='menu-abre'] {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    header nav label[for='menu-abre'] span.menu-hamburger {
+        background-color: var(--black);
+        border: 1px solid var(--black);
+        width: 30px;
+        height: 2px;
+    }
+
+    header nav label[for='menu-abre'] span.menu-hamburger:first-child {
+        margin-bottom: 0.5rem;
+    }
+
+    header nav label[for='menu-abre'] span.menu-hamburger:last-child {
+        margin-top: 0.5rem;
+    }
+
+    header input:checked~nav label[for='menu-abre'] span.menu-hamburger {
+        transform: rotate(-45deg);
+        transition: 0.5s;
+        margin: 0;
+    }
+
+    header input:checked~nav label[for='menu-abre'] span.menu-hamburger:first-child {
+        transform: rotate(45deg);
+        transition: 0.5s;
+        margin: 0;
+    }
+
+    header input:checked~nav label[for='menu-abre'] span.menu-hamburger:last-child {
+        display: none;
+    }
+
+    header nav div {
+        display: none;
+    }
+
+    header input:checked~nav {
+        display: flex;
+    }
+
+    header input:checked~nav div {
+        position: absolute;
+        top: 1rem;
+        left: 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    header input:checked~nav div a {
+        padding: 0.2rem;
+        background-color: var(--white);
+    }
+
+    header input:checked~nav div a:hover {
+        background-color: var(--black);
+        color: var(--white);
+    }
+}
