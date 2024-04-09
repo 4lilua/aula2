@@ -22,8 +22,8 @@ header input#menu-abre {
     header nav label[for='menu-abre'] span.menu-hamburger {
         background-color: var(--black);
         border: 1px solid var(--black);
-        width: 30px;
-        height: 2px;
+        width: 35px;
+        height: 3px;
     }
 
     header nav label[for='menu-abre'] span.menu-hamburger:first-child {

@@ -8,12 +8,13 @@
 :root{
     --primay: #CFC3B0;
     --secondary: #876D59;
+    --black: #000;
+    --white: #fff;
 }
 
 header{
     background-color: var(--primay);
     height: 6rem;
-    border: 2.5px solid rgb(0, 0, 0);
     display: flex;
     align-items: center;
 }
@@ -39,6 +40,7 @@ main{
     min-height: calc(100vh - 9.5rem);
     background-size: 100% 100%;
 }
+
 main section{
     background-color: var(--secondary);
     max-width: 40rem;
@@ -49,20 +51,25 @@ main section{
 
 main.index section {
     display: flex;
+    flex-direction: column;
+    position: relative;
+
 }
 
 main.index section img {
-    width: 30%;
-    height: 30%;
+    width: 25%;
+    height: 25%;
+    display: block;
+    margin-bottom: 80px;
+    top: 10;
+    left: 10;
 }
-
-
 
 footer{
     background-color: var(--primay);
-    height: 3rem;
-    border: 2.5px solid rgb(0, 0, 0);
+    height: 3.5rem;
 }
+
 footer div.menu2{
     width: 100%;
 }
@@ -85,12 +92,6 @@ footer div a img{
     font-family: "Madimi One", sans-serif;
 }
 
-:root {
-    --primary: #78909C;
-    --secondary: #D9D9D9;
-    --black: #000;
-    --white: #fff;
-}
 
 
 
