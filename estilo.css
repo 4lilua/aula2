@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Life+Savers:wght@400;700;800&display=swap');
+
 *{
     box-sizing: border-box;
     margin: 0;
     border: 0;
     outline: 0;
+    font-family: "Life Savers", sans-serif;
 }
 
 :root{
@@ -57,13 +60,16 @@ main.index section {
 }
 
 main.index section img {
-    width: 25%;
-    height: 25%;
+    width: 20%;
+    height: 20%;
     display: block;
-    margin-bottom: 80px;
+    margin: 3rem;
+    margin-top: 6rem;
     top: 10;
     left: 10;
 }
+
+main section div 
 
 footer{
     background-color: var(--primay);
@@ -77,21 +83,4 @@ footer div.menu2{
 footer div a img{
     height: 2.5rem;
 }
-
-
-
-
-
-@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    outline: 0;
-    font-family: "Madimi One", sans-serif;
-}
-
-
-
 
