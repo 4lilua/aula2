@@ -92,18 +92,12 @@ main.index section img {
     width: 20%;
     height: 20%;
     display: block;
-<<<<<<< HEAD
     margin: 0.25rem;
     margin-top: 2.5rem;
-=======
-    margin: 3rem;
-    margin-top: 6rem;
->>>>>>> be7687c6339a05645cc86e45e978cae53f8aaede
     top: 10;
     left: 10;
 }
 
-<<<<<<< HEAD
 main.index section div p.texto{
    font-size: 40px;
    text-align: center;
@@ -158,9 +152,32 @@ main.index section div p.texto2{
 
 
 
-=======
-main section div 
->>>>>>> be7687c6339a05645cc86e45e978cae53f8aaede
+ main menu.index.html2{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 0.5rem;
+    align-content: baseline;
+    padding: 0.5rem;
+}
+
+main.menu.index.html2{
+    background-color: var(--secondary);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+main.menu.index section aside {
+    display: flex;
+}
+
+main.comentario section aside p {
+    font-size: 0.8rem;
+    margin-left: 0.5rem;
+}
+
+
+ 
+
 
 footer{
     background-color: var(--primay);
@@ -175,10 +192,7 @@ footer div a img{
     height: 2.5rem;
 }
 
-<<<<<<< HEAD
 
 
 
 
-=======
->>>>>>> be7687c6339a05645cc86e45e978cae53f8aaede
