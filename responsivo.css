@@ -1,3 +1,6 @@
+@import url('index.html');
+
+
 @media(max-width: 800px) {
     main.comentario {
         display: grid;

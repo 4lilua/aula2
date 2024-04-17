@@ -10,15 +10,15 @@
 
 
 :root{
-    --primay: #CFC3B0;
+    --primary: #CFC3B0;
     --secondary: #876D59;
     --black: #000;
     --white: #fff;
 }
 
 header{
-    background-color: var(--primay);
-    height: 6rem;
+    background-color: var(--primary);
+    height: 5.5rem;
     display: flex;
     align-items: center;
 }
@@ -38,6 +38,9 @@ header nav div a img{
     height: 3.5rem;
 }
 
+
+
+
 main{
     background-image: url('./imagem/fundo2.jpg');
     background-repeat: no-repeat;
@@ -48,12 +51,8 @@ main{
 main section{
     background-color: var(--secondary);
     max-width: 40rem;
-    min-height: calc(100vh - 9.5rem);
+    min-height: calc(100vh - 8.35rem);
     margin: 0 auto;
-}
-
-main.index{
-    padding: 20px;    
 }
 
 main.produtos{
@@ -66,21 +65,13 @@ main.produtos ul{
     list-style: none;
     padding: 0;
     margin: 0;
-}
-
-main.produtos li {
     text-align: center;
     margin-top: 20px;
-}
-
-main.produtos li img {
     width: 200px;
-}
-
-main.produtos li p {
     margin-top: 10px;
     font-size: 16px;
 }
+
 
 main.index section {
     display: flex;
@@ -96,12 +87,14 @@ main.index section img {
     margin-top: 2.5rem;
     top: 10;
     left: 10;
+    margin-left: 2rem;
 }
 
 main.index section div p.texto{
    font-size: 40px;
    text-align: center;
    margin-top: 30px;
+
 }
 
 main.index section div p.texto2{
@@ -110,8 +103,8 @@ main.index section div p.texto2{
     margin-top: 20px;
  }
 
-  main.index section ul div.titulo1{
-    font-size: 25px;
+  main.index section ul p{
+    font-size: 20px;
     text-align: left;
     margin-top: 10px;
  }
@@ -152,7 +145,23 @@ main.index section div p.texto2{
 
 
 
- main menu.index.html2{
+ main menu{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 0.5rem;
+    align-content: baseline;
+    padding: 0.5rem;
+    background-color: var(--secondary);
+    border-radius: 0.5rem;
+}
+
+
+main.menu.index section aside {
+    display: flex;
+}
+
+/* Comentário */
+main.comentario {
     display: grid;
     grid-template-columns: auto auto auto auto;
     gap: 0.5rem;
@@ -160,13 +169,13 @@ main.index section div p.texto2{
     padding: 0.5rem;
 }
 
-main.menu.index.html2{
+main.comentario section {
     background-color: var(--secondary);
     padding: 0.5rem;
     border-radius: 0.5rem;
 }
 
-main.menu.index section aside {
+main.comentario section aside {
     display: flex;
 }
 
@@ -175,12 +184,11 @@ main.comentario section aside p {
     margin-left: 0.5rem;
 }
 
-
  
 
 
 footer{
-    background-color: var(--primay);
+    background-color: var(--primary);
     height: 2.85rem;
 }
 
@@ -191,8 +199,5 @@ footer div.menu2{
 footer div a img{
     height: 2.5rem;
 }
-
-
-
 
 
