@@ -1,22 +1,21 @@
-@import url('index.html');
 
 
 @media(max-width: 800px) {
-    main.comentario {
+    main.pedido{
         display: grid;
         grid-template-columns: auto auto auto;
     }
 }
 
 @media(max-width: 600px) {
-    main.comentario {
+    main.pedido{
         display: grid;
         grid-template-columns: auto auto;
     }
 }
 
 @media(max-width: 400px) {
-    main.comentario {
+    main.pedido{
         display: grid;
         grid-template-columns: auto;
     }

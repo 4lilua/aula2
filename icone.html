@@ -5,17 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/estilo.css">
-    <link rel="stylesheet" href="./css/menu.css">
-    <link rel="stylesheet" href="./css/responsivo.css">
-
+    <link rel="stylesheet" href="./estilo.css">
+    <link rel="stylesheet" href="./menu.css">
+    <link rel="stylesheet" href="./responsivo.css">
 </head>
 
 <body>
     <header>
-        <figure>
-            <img src="./imagem/icone_pedido.svg" alt="pedido"> <span>Pedido</span>
-        </figure>
+
         <input type="checkbox" id="menu-abre">
         <nav>
             <label for="menu-abre">
@@ -23,8 +20,11 @@
                 <span class="menu-hamburger"></span>
                 <span class="menu-hamburger"></span>
             </label>
-            
-            <div>
+
+            <div class="menu">
+                <a href="index.html">
+                    <img src="./imagem/icone_home.svg" alt="home">
+                </a>
                 <a href="index.html">
                     <img src="./imagem/icone_pedido.svg" alt="pedido">
                 </a>
@@ -33,14 +33,14 @@
                 <a href="index.html">
                     <img src="./imagem/icone_usiario.svg" alt="usuario">
                 </a>
-            </div>
-
+            </div>  
         </nav>
+
     </header>
-    <main class="comentario">
+    <main class="pedido">
         <section>
             <aside>
-                <h5>Data:</h5>
+                <h5>Expresso:</h5>
                 <p>dia/mês/ano</p>
             </aside>
             <aside>
@@ -110,19 +110,20 @@
         </section>
     </main>
     <footer>
-        <a href="http://facebook.com" target="_blank">
-            <img src="./img/face.png" alt="Facebook">
-        </a>
-        <a href="http://instagram.com" target="_blank">
-            <img src="./img/insta.png" alt="Instagram">
-        </a>
-        <a href="http://linkedin.com" target="_blank">
-            <img src="./img/linkedin.png" alt="Linkedin">
-        </a>
+        <div class="menu2">
+            <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">
+                <img src="./imagem/icone_email.svg" alt="">  
+            </a>
+            <a href="https://www.whatsapp.com/" target="_blank">
+                <img src="./imagem/icone_whatsapp.svg" alt="">  
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="./imagem/icone_instagram2.svg" alt="">  
+            </a>
+        </div>
     </footer>
 </body>
 
 </html>
-
 
 
