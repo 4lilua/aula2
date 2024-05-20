@@ -40,110 +40,113 @@ header nav div a img{
 }
 
 
-
-
 main{
     background-image: url('./imagem/fundo2.jpg');
     background-repeat: no-repeat;
-    min-height: calc(100vh - 9.5rem);
+    min-height: calc(100vh - 8.35rem);
     background-size: 100% 100%;
+
 }
 
-main section{
+main.index section{
     background-color: var(--secondary);
     max-width: 40rem;
     min-height: calc(100vh - 8.35rem);
     margin: 0 auto;
+
 }
 
-main.produtos{
+main.index section{
     display: flex;
     align-items: center;
     justify-content: space-around;
-}
-
-main.produtos ul{
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-    margin-top: 20px;
-    width: 200px;
-    margin-top: 10px;
-    font-size: 16px;
-}
-
-
-main.index section {
-    display: flex;
     flex-direction: column;
     position: relative;
 }
 
-main.index section img {
-    width: 20%;
-    height: 20%;
-    display: block;
-    margin: 0.25rem;
-    margin-top: 2.5rem;
-    top: 10;
-    left: 10;
-    margin-left: 2rem;
+main.index div.titulo{
+    text-align: center;
+    position: absolute;
+    top: 10%;
+    margin-top: 0.5px;
+    width: 400px;
+    font-size: 16px;
 }
 
 main.index section div p.texto{
-   font-size: 40px;
-   text-align: center;
-   margin-top: 30px;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 0.1rem;
+ }
+ 
+ main.index section div p.texto2{
+     font-size: 32.5px;
+     text-align: center;
+     margin-top: 20px;
+ }
 
+main.index div.conjunto1 img{
+    position: absolute;
+    left: 5%;
+    top: 30.5%;
+    display: block;
+    width: 20%;
+    height: 15%;
 }
 
-main.index section div p.texto2{
-    font-size: 30px;
-    text-align: center;
-    margin-top: 20px;
- }
-
-  main.index section ul p{
-    font-size: 20px;
-    text-align: left;
-    margin-top: 10px;
- }
-
- main.index ul div.titulo1 p{
-    font-size: 20px;
-    text-align: center;
-    margin-top: 10px;
-    display: block;
- }
-
- main.index ul div.titulo2 p{
-    font-size: 20px;
-    text-align: center;
-    margin-top: 10px;
-    display: block;
- }
-
- main.index ul div.titulo3 p{
-    font-size: 20px;
-    text-align: center;
-    margin-top: 10px;
-    display: block;
- }
-
- 
- main.index section ul div.titulo2{
+main.index div.conjunto1 ul{
+    list-style-type: none;
+    list-style-position: inside;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 52%;
+    top: 30%; 
     font-size: 25px;
-    text-align: left;
-    margin-top: 10px;
- }
+    line-height: 1.65;
+}
 
- main.index section ul div.titulo3{
+main.index div.conjunto2 img{
+    position: absolute;
+    left: 5%;
+    top: 52%;
+    display: block;
+    width: 20%;
+    height: 15%;
+}
+
+main.index div.conjunto2 ul{
+    list-style-type: none;
+    list-style-position: inside;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 52%;
+    top: 51.5%; 
     font-size: 25px;
-    text-align: left;
-    margin-top: 10px;
- }
+    line-height: 1.65;
+}
 
+main.index div.conjunto3 img{
+    position: absolute;
+    left: 5%;
+    top: 74%;
+    display: block;
+    width: 20%;
+    height: 15%;
+}
+
+main.index div.conjunto3 ul{
+    list-style-type: none;
+    list-style-position: inside;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 52%;
+    top: 73.5%; 
+    font-size: 25px;
+    line-height: 1.65;
+}
 
 
  main menu{
@@ -156,13 +159,13 @@ main.index section div p.texto2{
     border-radius: 0.5rem;
 }
 
-
 main.menu.index section aside {
     display: flex;
 }
 
-/* Comentário */
-main.comentario {
+
+/* Pedido */
+main.pedido{
     display: grid;
     grid-template-columns: auto auto auto auto;
     gap: 0.5rem;
@@ -170,17 +173,17 @@ main.comentario {
     padding: 0.5rem;
 }
 
-main.comentario section {
+main.pedido section {
     background-color: var(--secondary);
     padding: 0.5rem;
     border-radius: 0.5rem;
 }
 
-main.comentario section aside {
+main.pedido section aside {
     display: flex;
 }
 
-main.comentario section aside p {
+main.pedido section aside p {
     font-size: 0.8rem;
     margin-left: 0.5rem;
 }
