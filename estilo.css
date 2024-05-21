@@ -49,20 +49,18 @@ main{
     background-image: url('./imagem/fundo2.jpg');
     background-repeat: no-repeat;
     min-height: calc(100vh - 8.35rem);
-    background-size: 100% 100%;
+    background-size: auto;
 }
+
 
 main.index section{
     background-color: var(--secondary);
     max-width: 40rem;
     min-height: calc(100vh - 8.35rem);
     margin: auto;
-}
-
-main.index section{
+    justify-content: space-around;
     display: flex;
     align-items: center;
-    justify-content: space-around;
     flex-direction: column;
     position: relative;
 }
@@ -186,34 +184,6 @@ main.index div.conjunto3 ul.sobremesa2{
     font-size: 24px;
     line-height: 1.65;
 }
-
-
-
-/* Pedido */
-main.pedido{
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    gap: 0.5rem;
-    align-content: baseline;
-    padding: 0.5rem;
-}
-
-main.pedido section {
-    background-color: var(--secondary);
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-}
-
-main.pedido section aside {
-    display: flex;
-}
-
-main.pedido section aside p {
-    font-size: 0.8rem;
-    margin-left: 0.5rem;
-}
-
- 
 
 
 footer{

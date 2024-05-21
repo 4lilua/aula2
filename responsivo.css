@@ -1,31 +1,102 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Life+Savers:wght@400;700;800&display=swap');
 
-@media(max-width: 800px) {
-    main.pedido{
-        display: grid;
-        grid-template-columns: auto auto auto;
-    }
+*{
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    font-family: "Life Savers", sans-serif;
 }
 
-@media(max-width: 600px) {
-    main.pedido{
-        display: grid;
-        grid-template-columns: auto auto;
-    }
+:root{
+    --primary: #CFC3B0;
+    --secondary: #876D59;
+    --black: #000;
+    --white: #fff;
 }
 
-@media(max-width: 400px) {
-    main.pedido{
-        display: grid;
-        grid-template-columns: auto;
-    }
 
-    main.index section {
-        display: flex;
-        flex-direction: column;
-    }
-
-    main.index section img {
-        width: 100%;
-    }
+header{
+    background-color: var(--primary);
+    height: 5.5rem;
+    display: flex;
+    align-items: center;
 }
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+}
+
+header nav div.menu{
+    width: 100%;
+}
+
+header nav div a img{
+    margin: 1rem;
+    height: 4rem;
+}
+
+header nav div.menu-opcao{
+    display: none;
+}
+
+
+main{
+    background-repeat: no-repeat;
+    min-height: calc(100vh - 8.35rem);
+    background-size: 100% 100%;
+}
+
+main {
+    padding: 2rem;
+}
+
+main section div.food-item, #cart-items {
+    background-color: white;
+    border: 1px solid #ddd;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+main section div.food-item img{
+    position: absolute;
+    left: 5%;
+    padding: 5px;
+    width: 100px;
+}
+
+
+button {
+    background-color: var(--secondary);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--secondary);
+}
+
+
+footer{
+    background-color: var(--primary);
+    height: 2.85rem;
+}
+
+footer div.menu2{
+    width: 100%;
+}
+
+footer div a img{
+    height: 2.5rem;
+}
+
+
+
+

@@ -4,15 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./estilo.css">
-    <link rel="stylesheet" href="./menu.css">
+    <title>Responsivo</title>
     <link rel="stylesheet" href="./responsivo.css">
+    <link rel="stylesheet" href="./menu.css">
 </head>
 
 <body>
     <header>
-
         <input type="checkbox" id="menu-abre">
         <nav>
             <label for="menu-abre">
@@ -20,6 +18,15 @@
                 <span class="menu-hamburger"></span>
                 <span class="menu-hamburger"></span>
             </label>
+
+            <div class="menu-opcao">
+                <a href="index.html">Home</a>
+                <a href="pedido.html">Pedido</a>
+            </div>
+
+            <div>
+                <a href="cart.html">Carrinho (<span id="cart-count">0</span>)</a>
+            </div>
 
             <div class="menu">
                 <a href="index.html">
@@ -29,86 +36,39 @@
                     <img src="./imagem/icone_pedido.svg" alt="pedido">
                 </a>
             </div>
+
             <div>
                 <a href="index.html">
                     <img src="./imagem/icone_usiario.svg" alt="usuario">
                 </a>
-            </div>  
+            </div>
         </nav>
-
     </header>
+
+
     <main class="pedido">
         <section>
-            <aside>
-                <h5>Expresso:</h5>
-                <p>dia/mês/ano</p>
-            </aside>
-            <aside>
-                <h5>Assunto:</h5>
-                <p></p>
-            </aside>
-            <aside>
-                <h5>Comentário:</h5>
-                <p></p>
-            </aside>
-        </section>
-        <section>
-            <aside>
-                <h5>Data:</h5>
-                <p>dia/mês/ano</p>
-            </aside>
-            <aside>
-                <h5>Assunto:</h5>
-                <p></p>
-            </aside>
-            <aside>
-                <h5>Comentário:</h5>
-                <p></p>
-            </aside>
-        </section>
-        <section>
-            <aside>
-                <h5>Data:</h5>
-                <p>dia/mês/ano</p>
-            </aside>
-            <aside>
-                <h5>Assunto:</h5>
-                <p></p>
-            </aside>
-            <aside>
-                <h5>Comentário:</h5>
-                <p></p>
-            </aside>
-        </section>
-        <section>
-            <aside>
-                <h5>Data:</h5>
-                <p>dia/mês/ano</p>
-            </aside>
-            <aside>
-                <h5>Assunto:</h5>
-                <p></p>
-            </aside>
-            <aside>
-                <h5>Comentário:</h5>
-                <p></p>
-            </aside>
-        </section>
-        <section>
-            <aside>
-                <h5>Data:</h5>
-                <p>dia/mês/ano</p>
-            </aside>
-            <aside>
-                <h5>Assunto:</h5>
-                <p></p>
-            </aside>
-            <aside>
-                <h5>Comentário:</h5>
-                <p></p>
-            </aside>
+            <div class="food-item">
+                <img src="./images/comida1.jpg" alt="Comida 1">
+                <div class="food-description">
+                    <h2>Expresso</h2>
+                    <p>Delicioso café expresso.</p>
+                    <button onclick="addToCart({ name: 'Expresso' })">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+            <div class="food-item">
+                <img src="./images/comida2.jpg" alt="Comida 2">
+                <div class="food-description">
+                    <h2>Macchiato</h2>
+                    <p>Café macchiato com leite.</p>
+                    <button onclick="addToCart({ name: 'Macchiato' })">Adicionar ao Carrinho</button>
+                </div>
+            </div>
         </section>
     </main>
+
+    <script src="scripts.js"></script>
+
     <footer>
         <div class="menu2">
             <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">

@@ -57,6 +57,16 @@ header input#menu-abre{
         flex-direction: column;
     }
 
+    header nav div.menu{
+        display: none;
+        flex-direction: column;
+    }
+
+    header nav div a img{
+        margin: 1rem;
+        height: 3rem;
+    }
+
     header input:checked~nav{
         display: flex;
     }
@@ -70,7 +80,7 @@ header input#menu-abre{
         width: 10rem;
     }
 
-    header input:checked~nav div.menu-opcao a {
+    header input:checked~nav div.menu-opcao a{
         padding: 0.5rem;
         background-color: var(--white);
         font-size: 24px;
@@ -81,6 +91,7 @@ header input#menu-abre{
         background-color: var(--black);
         color: var(--white);
     }
+
 }
 
 
