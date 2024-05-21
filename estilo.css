@@ -36,7 +36,12 @@ header nav div.menu{
 }
 
 header nav div a img{
-    height: 3.5rem;
+    margin: 1rem;
+    height: 4rem;
+}
+
+header nav div.menu-opcao{
+    display: none;
 }
 
 
@@ -45,15 +50,13 @@ main{
     background-repeat: no-repeat;
     min-height: calc(100vh - 8.35rem);
     background-size: 100% 100%;
-
 }
 
 main.index section{
     background-color: var(--secondary);
     max-width: 40rem;
     min-height: calc(100vh - 8.35rem);
-    margin: 0 auto;
-
+    margin: auto;
 }
 
 main.index section{
@@ -94,7 +97,7 @@ main.index div.conjunto1 img{
     height: 15%;
 }
 
-main.index div.conjunto1 ul{
+main.index div.conjunto1 ul.bebida1{
     list-style-type: none;
     list-style-position: inside;
     margin: 0;
@@ -102,7 +105,19 @@ main.index div.conjunto1 ul{
     position: absolute;
     right: 52%;
     top: 30%; 
-    font-size: 25px;
+    font-size: 24px;
+    line-height: 1.65;
+}
+
+main.index div.conjunto1 ul.bebida2{
+    list-style-type: none;
+    list-style-position: inside;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 15%;
+    top: 30%; 
+    font-size: 24px;
     line-height: 1.65;
 }
 
@@ -115,15 +130,27 @@ main.index div.conjunto2 img{
     height: 15%;
 }
 
-main.index div.conjunto2 ul{
+main.index div.conjunto2 ul.lanche1{
     list-style-type: none;
     list-style-position: inside;
     margin: 0;
     padding: 0;
     position: absolute;
-    right: 52%;
+    right: 40%;
     top: 51.5%; 
-    font-size: 25px;
+    font-size: 24px;
+    line-height: 1.65;
+}
+
+main.index div.conjunto2 ul.lanche2{
+    list-style-type: none;
+    list-style-position: inside;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 8%;
+    top: 51.5%; 
+    font-size: 24px;
     line-height: 1.65;
 }
 
@@ -136,32 +163,30 @@ main.index div.conjunto3 img{
     height: 15%;
 }
 
-main.index div.conjunto3 ul{
+main.index div.conjunto3 ul.sobremesa1{
     list-style-type: none;
     list-style-position: inside;
     margin: 0;
     padding: 0;
     position: absolute;
-    right: 52%;
+    right: 45.5%;
     top: 73.5%; 
-    font-size: 25px;
+    font-size: 24px;
     line-height: 1.65;
 }
 
-
- main menu{
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    gap: 0.5rem;
-    align-content: baseline;
-    padding: 0.5rem;
-    background-color: var(--secondary);
-    border-radius: 0.5rem;
+main.index div.conjunto3 ul.sobremesa2{
+    list-style-type: none;
+    list-style-position: inside;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 17%;
+    top: 73.5%; 
+    font-size: 24px;
+    line-height: 1.65;
 }
 
-main.menu.index section aside {
-    display: flex;
-}
 
 
 /* Pedido */

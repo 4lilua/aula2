@@ -1,8 +1,8 @@
-header input#menu-abre {
+header input#menu-abre{
     display: none;
 }
 
-@media(max-width: 640px) {
+@media(max-width: 640px){
     header {
         flex-direction: row-reverse;
     }
@@ -11,7 +11,8 @@ header input#menu-abre {
         display: none;
     }
 
-    header nav label[for='menu-abre'] {
+    header nav label[for='menu-abre']{
+        position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -19,60 +20,68 @@ header input#menu-abre {
         cursor: pointer;
     }
 
-    header nav label[for='menu-abre'] span.menu-hamburger {
+    header nav label[for='menu-abre'] span.menu-hamburger{
         background-color: var(--black);
         border: 1px solid var(--black);
         width: 35px;
         height: 3px;
+        margin-left: 1rem;
     }
 
-    header nav label[for='menu-abre'] span.menu-hamburger:first-child {
+    header nav label[for='menu-abre'] span.menu-hamburger:first-child{
         margin-bottom: 0.5rem;
     }
 
-    header nav label[for='menu-abre'] span.menu-hamburger:last-child {
+    header nav label[for='menu-abre'] span.menu-hamburger:last-child{
         margin-top: 0.5rem;
     }
 
-    header input:checked~nav label[for='menu-abre'] span.menu-hamburger {
+    header input:checked~nav label[for='menu-abre'] span.menu-hamburger{
         transform: rotate(-45deg);
         transition: 0.5s;
         margin: 0;
     }
 
-    header input:checked~nav label[for='menu-abre'] span.menu-hamburger:first-child {
+    header input:checked~nav label[for='menu-abre'] span.menu-hamburger:first-child{
         transform: rotate(45deg);
         transition: 0.5s;
         margin: 0;
     }
 
-    header input:checked~nav label[for='menu-abre'] span.menu-hamburger:last-child {
+    header input:checked~nav label[for='menu-abre'] span.menu-hamburger:last-child{
         display: none;
     }
 
-    header nav div {
+    header nav div.menu-opcao{
         display: none;
-    }
-
-    header input:checked~nav {
-        display: flex;
-    }
-
-    header input:checked~nav div {
-        position: absolute;
-        top: 1rem;
-        left: 2rem;
-        display: flex;
         flex-direction: column;
     }
 
-    header input:checked~nav div a {
-        padding: 0.2rem;
-        background-color: var(--white);
+    header input:checked~nav{
+        display: flex;
     }
 
-    header input:checked~nav div a:hover {
+    header input:checked~nav div.menu-opcao{
+        position: absolute;
+        top: 2rem;
+        left: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        width: 10rem;
+    }
+
+    header input:checked~nav div.menu-opcao a {
+        padding: 0.5rem;
+        background-color: var(--white);
+        font-size: 24px;
+        text-decoration-color: black;  
+    }
+
+    header input:checked~nav div.menu-opcao a:hover{
         background-color: var(--black);
         color: var(--white);
     }
 }
+
+
+
